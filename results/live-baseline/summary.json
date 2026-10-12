@@ -1,0 +1,28 @@
+{
+  "mode": "fresh_model_evaluation",
+  "status": "completed",
+  "scope": "baseline_attempt",
+  "selected_grid_complete": true,
+  "full_baseline_complete": true,
+  "expected_runs": 200,
+  "records_saved": 200,
+  "finished_runs": 200,
+  "interrupted_runs": 0,
+  "successful_finished_runs": 98,
+  "execution_error_runs": 0,
+  "pass_k": {
+    "1": 0.49,
+    "2": 0.33,
+    "3": 0.245,
+    "4": 0.2
+  },
+  "cost": {
+    "estimated_api_cost_usd": 18.5066475,
+    "uncertain_api_cost_upper_bound_usd": 0.0,
+    "budget_usd": 19.90205,
+    "api_calls_dispatched": 4164,
+    "note": "Token-based estimate, not an invoice; includes both roles and setup calls."
+  },
+  "published_pass_1": 0.42,
+  "pass_1_difference_percentage_points": 7.000000000000001
+}

@@ -1,0 +1,48 @@
+{
+  "mode": "published_reward_recomputation",
+  "fresh_model_evaluation": false,
+  "regraded": false,
+  "tasks": 50,
+  "trials_per_task": 4,
+  "runs": 200,
+  "successful_runs": 84,
+  "error_runs": 0,
+  "mean_reward": 0.42,
+  "pass_k": {
+    "1": 0.42,
+    "2": 0.2733333333333333,
+    "3": 0.22,
+    "4": 0.2
+  },
+  "success_count_distribution": {
+    "0": 14,
+    "1": 12,
+    "2": 10,
+    "3": 4,
+    "4": 10
+  },
+  "formula": "mean over tasks of C(successes, k) / C(trials, k)",
+  "interpretation": "Probability that all k sampled attempts succeed, without replacement; not pass@k.",
+  "cost": {
+    "new_api_cost_usd": 0.0,
+    "historical_total_cost_usd": null,
+    "historical_agent_cost_usd": null,
+    "sum_of_logged_user_cost_values": 0.50315,
+    "runs_with_logged_user_cost": 195,
+    "note": "Historical total cost is absent from the archive. In the pinned source, user_cost is overwritten after each response; summing the saved values does not establish full spend."
+  },
+  "provenance": {
+    "upstream_repository": "https://github.com/sierra-research/tau-bench",
+    "pinned_commit": "7362a1708d720a4d697d042f21fd8637ea144c3b",
+    "git_head_verified": false,
+    "vendor_files_verified": 104,
+    "vendor_manifest_sha256": "03fa4e2c53855a84cce20eaae91e82a5b5c8c5c5d222dc57b3dc032758942e88",
+    "trajectory_file": "historical_trajectories/gpt-4o-airline.json",
+    "trajectory_sha256": "e9e6c0297660c537f83d4fd9c476ce7a9a86ecd2784874b7bfc13be598e37bfa",
+    "model_label_from_filename": "gpt-4o",
+    "exact_model_snapshot": null,
+    "historical_seed": null,
+    "historical_temperature": null,
+    "note": "The archived result file does not establish the exact model snapshot, seed, temperature, or full run configuration."
+  }
+}

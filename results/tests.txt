@@ -1,0 +1,33 @@
+test_api_error_retains_reservation_stops_and_redacts_exception (test_live.LiveTests.test_api_error_retains_reservation_stops_and_redacts_exception) ... ok
+test_budget_blocks_before_dispatch (test_live.LiveTests.test_budget_blocks_before_dispatch) ... ok
+test_cached_tokens_are_discounted_and_missing_usage_rejected (test_live.LiveTests.test_cached_tokens_are_discounted_and_missing_usage_rejected) ... ok
+test_missing_usage_retains_reservation (test_live.LiveTests.test_missing_usage_retains_reservation) ... ok
+test_model_mismatch_stops_and_keeps_cost_uncertain (test_live.LiveTests.test_model_mismatch_stops_and_keeps_cost_uncertain) ... ok
+test_pilot_and_interrupted_grid_do_not_claim_baseline_score (test_live.LiveTests.test_pilot_and_interrupted_grid_do_not_claim_baseline_score) ... ok
+test_real_upstream_control_flow_with_fake_responses (test_live.LiveTests.test_real_upstream_control_flow_with_fake_responses) ... task=0 trial=0 reward=0.0 cost_estimate_usd=0.001400
+ok
+test_request_log_is_immutable_and_preserves_provider_defaults (test_live.LiveTests.test_request_log_is_immutable_and_preserves_provider_defaults) ... ok
+test_sdk_transport_has_no_retries_or_litellm_dispatch (test_live.LiveTests.test_sdk_transport_has_no_retries_or_litellm_dispatch) ... ok
+test_second_turn_api_payload_preserves_tools_and_removes_response_metadata (test_live.LiveTests.test_second_turn_api_payload_preserves_tools_and_removes_response_metadata) ... ok
+test_action_after_stop_rejected (test_replay.ReplayControlTests.test_action_after_stop_rejected) ... ok
+test_initial_stop_is_not_a_terminal_response (test_replay.ReplayControlTests.test_initial_stop_is_not_a_terminal_response) ... ok
+test_malformed_message_rejected (test_replay.ReplayControlTests.test_malformed_message_rejected) ... ok
+test_recorded_stop_triggers_grading_once (test_replay.ReplayControlTests.test_recorded_stop_triggers_grading_once) ... ok
+test_repeated_call_id_pairs_by_position (test_replay.ReplayControlTests.test_repeated_call_id_pairs_by_position) ... ok
+test_step_limit_failure_is_not_graded (test_replay.ReplayControlTests.test_step_limit_failure_is_not_graded) ... ok
+test_duplicate_run_rejected_even_if_total_count_is_right (test_reproduce.ScoringTests.test_duplicate_run_rejected_even_if_total_count_is_right) ... ok
+test_empty_or_zero_trial_input_rejected (test_reproduce.ScoringTests.test_empty_or_zero_trial_input_rejected) ... ok
+test_error_run_cannot_claim_success (test_reproduce.ScoringTests.test_error_run_cannot_claim_success) ... ok
+test_failed_execution_counts_as_failed_attempt (test_reproduce.ScoringTests.test_failed_execution_counts_as_failed_attempt) ... ok
+test_known_pass_k_is_all_k_successes (test_reproduce.ScoringTests.test_known_pass_k_is_all_k_successes) ... ok
+test_malformed_values (test_reproduce.ScoringTests.test_malformed_values) ... ok
+test_missing_costs_are_unknown (test_reproduce.ScoringTests.test_missing_costs_are_unknown) ... ok
+test_missing_run_is_not_silently_dropped (test_reproduce.ScoringTests.test_missing_run_is_not_silently_dropped) ... ok
+test_nested_reward_inconsistency_rejected (test_reproduce.ScoringTests.test_nested_reward_inconsistency_rejected) ... ok
+test_order_does_not_change_results (test_reproduce.ScoringTests.test_order_does_not_change_results) ... ok
+test_reward_tolerance_matches_upstream (test_reproduce.ScoringTests.test_reward_tolerance_matches_upstream) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 2.059s
+
+OK

@@ -1,0 +1,85 @@
+{
+  "mode": "recorded_action_replay_with_upstream_grader",
+  "fresh_model_evaluation": false,
+  "model_api_calls": 0,
+  "new_api_cost_usd": 0.0,
+  "runtime": {
+    "python": "3.12.4",
+    "litellm": "1.104.2",
+    "pydantic": "2.14.0"
+  },
+  "provenance": {
+    "upstream_repository": "https://github.com/sierra-research/tau-bench",
+    "pinned_commit": "7362a1708d720a4d697d042f21fd8637ea144c3b",
+    "git_head_verified": false,
+    "vendor_files_verified": 104,
+    "vendor_manifest_sha256": "03fa4e2c53855a84cce20eaae91e82a5b5c8c5c5d222dc57b3dc032758942e88",
+    "trajectory_file": "historical_trajectories/gpt-4o-airline.json",
+    "trajectory_sha256": "e9e6c0297660c537f83d4fd9c476ce7a9a86ecd2784874b7bfc13be598e37bfa",
+    "model_label_from_filename": "gpt-4o",
+    "exact_model_snapshot": null,
+    "historical_seed": null,
+    "historical_temperature": null,
+    "note": "The archived result file does not establish the exact model snapshot, seed, temperature, or full run configuration."
+  },
+  "runs": 1,
+  "selection": {
+    "task_id": 13,
+    "trial": 1
+  },
+  "termination_reasons": {
+    "user_stop": 1
+  },
+  "graded_runs": 1,
+  "reward_matches": 1,
+  "reward_mismatches": 0,
+  "task_targets_match": true,
+  "instruction_mismatches": 0,
+  "ground_truth_hash_comparisons": 1,
+  "ground_truth_hash_mismatches": 0,
+  "tool_calls": 5,
+  "tool_observations_exact_match": 5,
+  "tool_observations_semantic_mismatch": 0,
+  "replayed_pass_k": null,
+  "metrics_note": "No benchmark aggregate is computed for a smoke subset.",
+  "method": "Fresh database per recorded run; pinned tools execute saved arguments and the pinned grader scores terminated episodes. User replies and agent decisions are not regenerated.",
+  "limitations": [
+    "Matching replay does not measure current model performance or establish the original model snapshot, generation settings, or seed.",
+    "The archive-upload commit is pinned; the commit originally used to generate the trajectories is unknown.",
+    "The historical grader checks response outputs OR database state depending on task; it does not comprehensively audit permission or timing compliance."
+  ],
+  "runs_detail": [
+    {
+      "task_id": 13,
+      "trial": 1,
+      "archived_reward": 1.0,
+      "replayed_reward": 1.0,
+      "reward_matches": true,
+      "termination_reason": "user_stop",
+      "assistant_steps": 13,
+      "graded": true,
+      "task_targets_match": true,
+      "instruction_matches": true,
+      "initial_data_hash": "4a02dcbc0e3ace4d398988d60a33e73afad4d201deb426303159f086cadad20f",
+      "final_data_hash_before_grading": "4a02dcbc0e3ace4d398988d60a33e73afad4d201deb426303159f086cadad20f",
+      "grader_branch": "database_state",
+      "ground_truth_data_hash": "4a02dcbc0e3ace4d398988d60a33e73afad4d201deb426303159f086cadad20f",
+      "archived_ground_truth_data_hash": "4a02dcbc0e3ace4d398988d60a33e73afad4d201deb426303159f086cadad20f",
+      "ground_truth_hash_matches": true,
+      "grader_info": {
+        "r_actions": 1.0,
+        "gt_data_hash": "4a02dcbc0e3ace4d398988d60a33e73afad4d201deb426303159f086cadad20f"
+      },
+      "tool_calls": 5,
+      "tool_names": {
+        "get_reservation_details": 1,
+        "search_direct_flight": 2,
+        "search_onestop_flight": 1,
+        "update_reservation_flights": 1
+      },
+      "tool_observations_exact_match": 5,
+      "tool_observations_semantic_mismatch": 0,
+      "observation_mismatches": []
+    }
+  ]
+}

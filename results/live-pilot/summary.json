@@ -1,0 +1,21 @@
+{
+  "mode": "fresh_model_evaluation",
+  "status": "completed",
+  "scope": "pilot",
+  "selected_grid_complete": true,
+  "full_baseline_complete": false,
+  "expected_runs": 1,
+  "records_saved": 1,
+  "finished_runs": 1,
+  "interrupted_runs": 0,
+  "successful_finished_runs": 0,
+  "execution_error_runs": 0,
+  "pass_k": null,
+  "cost": {
+    "estimated_api_cost_usd": 0.09795,
+    "uncertain_api_cost_upper_bound_usd": 0.0,
+    "budget_usd": 2.0,
+    "api_calls_dispatched": 23,
+    "note": "Token-based estimate, not an invoice; includes both roles and setup calls."
+  }
+}

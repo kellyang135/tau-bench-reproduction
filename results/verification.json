@@ -1,0 +1,23 @@
+{
+  "verified_on": "2026-10-11",
+  "scope": "Published-trajectory audit and replay; no fresh model evaluation",
+  "python": "3.12.4",
+  "tests_passed": 17,
+  "full_replay": {
+    "runs": 200,
+    "reward_matches": 200,
+    "exact_tool_observation_matches": 1164,
+    "reference_state_hash_matches": 182,
+    "step_limit_failures_preserved": 5
+  },
+  "clean_environment_smoke": {
+    "task_id": 13,
+    "trial": 1,
+    "result_files_byte_identical_to_delivered_smoke": true,
+    "dependencies": "requirements-replay.txt"
+  },
+  "standard_library_metric_recomputation_matches_delivered_files": true,
+  "model_api_calls": 0,
+  "new_model_api_cost_usd": 0,
+  "historical_total_api_cost_usd": null
+}
