@@ -1,0 +1,35 @@
+{
+  "selection": "uniform random sample of 10 of 50 task IDs; no outcome filtering",
+  "selection_seed": 20261016,
+  "task_ids": [
+    8,
+    18,
+    26,
+    28,
+    32,
+    35,
+    42,
+    43,
+    46,
+    47
+  ],
+  "trials_per_condition": 3,
+  "conditions": [
+    "original user temperature omitted",
+    "user temperature 0"
+  ],
+  "agent_model": "gpt-4o-2024-08-06",
+  "user_model": "gpt-4o-2024-08-06",
+  "unchanged": "agent temperature 0, policy, tasks, grader, 30 steps, Python seed 10, no API seed, sequential, no retries",
+  "additional_total_cap_usd": 10,
+  "airline_condition_caps_usd": [
+    4,
+    4
+  ],
+  "mcp_cap_usd": 2,
+  "limitations": [
+    "Subset scores are not full benchmark scores.",
+    "Changing user temperature tests sensitivity, not historical causation.",
+    "Conditions run sequentially; time/backend changes remain possible confounds."
+  ]
+}

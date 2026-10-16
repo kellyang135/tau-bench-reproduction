@@ -71,7 +71,8 @@ def openai_completion():
 class CallLog:
     """Reserve a worst-case call before dispatch; retain it on unknown billing."""
 
-    def __init__(self, path, budget, completion):
+    def __init__(self, path, budget, completion, user_temperature=None):
+        self.user_temperature = user_temperature
         self.path, self.budget, self.completion = path, Decimal(str(budget)), completion
         self.spent, self.uncertain = Decimal(0), Decimal(0)
         self.count, self.context, self.stopped = 0, {}, None
@@ -96,6 +97,8 @@ class CallLog:
             # Deep-copy before upstream mutates its conversation list. Never log credentials.
             source_request = json.loads(json.dumps(kwargs))
             request = provider_request(source_request)
+            if role == "user" and self.user_temperature is not None:
+                request["temperature"] = self.user_temperature
             self.count += 1
             call = {"call_id": self.count, "role": role, **self.context}
             self.uncertain += CALL_RESERVE
@@ -171,12 +174,13 @@ def execute(args, source, completion=None):
     args.output_dir.mkdir(parents=True, exist_ok=False)
     litellm.suppress_debug_info = True
     litellm.set_verbose = False
-    log = CallLog(args.output_dir / "calls.jsonl", args.budget_usd, completion or openai_completion())
+    log = CallLog(args.output_dir / "calls.jsonl", args.budget_usd, completion or openai_completion(),
+                  getattr(args, "user_temperature", None))
     manifest = {"started_at": now(), "provenance": source, "agent_model": MODEL,
                 "user_model": MODEL, "provider": "openai", "task_ids": args.task_ids,
                 "trials": args.trials, "agent_strategy": "tool-calling", "user_strategy": "llm",
                 "environment": "airline", "task_split": "test", "agent_temperature": 0,
-                "user_temperature": "omitted (provider default)", "max_agent_steps": 30,
+                "user_temperature": getattr(args, "user_temperature", None) if getattr(args, "user_temperature", None) is not None else "omitted (provider default)", "max_agent_steps": 30,
                 "seed": 10, "seed_scope": "Python random only; no API seed is supplied",
                 "concurrency": 1, "shuffle": False, "num_retries": 0,
                 "transport": "OpenAI SDK with max_retries=0; adapted to LiteLLM ModelResponse for unchanged upstream consumers",
@@ -249,6 +253,8 @@ def main():
     parser.add_argument("--budget-usd", type=Decimal, required=True)
     parser.add_argument("--task-ids", nargs="+", type=int, default=list(range(50)))
     parser.add_argument("--trials", type=int, default=4)
+    parser.add_argument("--user-temperature", type=float, choices=[0.0], default=None,
+                        help="Set simulated-user temperature to zero; default preserves omission")
     parser.add_argument("--preflight", action="store_true", help="Check local source, dependencies and key presence; no API calls")
     args = parser.parse_args()
     if not args.budget_usd.is_finite() or args.budget_usd < CALL_RESERVE:

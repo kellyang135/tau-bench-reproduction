@@ -97,3 +97,55 @@ Replay makes no model calls. To preserve the delivered results, add `--output-di
 `external/tau-bench` contains an unmodified subset of that archive-upload snapshot and Sierra's [MIT license](external/tau-bench/LICENSE). All three scripts verify these files against `vendor-manifest.json`.
 
 The archive does not identify the exact model snapshots, full generation settings, generating code revision, or total historical API cost. Replay agreement does not establish those missing details or prove the grader is correct.
+
+## Follow-up experiments
+
+The original-settings subset scored **13/30 (43.3%)**; setting simulated-user
+temperature to zero scored **12/30 (40%)**. Both conditions varied across repeats.
+The MCPMark attempt completed execution but failed its verifier because `.DS_Store`
+was placed in the wrong size category. Total additional API cost was **$4.5417225**.
+See `results/followup/analysis.json`, `audit.json`, and `mcp/verification.txt`.
+
+`results/followup/plan.json` fixes ten randomly selected task IDs and two conditions:
+three repeats with the original settings, then three with only simulated-user
+temperature set to zero. Each condition has a $4 cap. These are subset results,
+not new full-benchmark scores. The earlier 200-attempt baseline stays separate.
+
+```sh
+python3 analyze_followup.py
+.venv/bin/python audit_followup.py
+```
+
+The first command compares saved results without API calls. The second audits
+API token accounting and replays the follow-up actions with the pinned grader.
+`results/followup/task_comparison.csv` includes all 50 tasks, including declines.
+
+To run another comparison, use a new output directory for each condition:
+
+```sh
+.venv/bin/python live.py --task-ids 8 18 26 28 32 35 42 43 46 47 --trials 3 --budget-usd 4 --output-dir results/repeat-original
+.venv/bin/python live.py --task-ids 8 18 26 28 32 35 42 43 46 47 --trials 3 --budget-usd 4 --user-temperature 0 --output-dir results/repeat-zero
+```
+
+### MCPMark task
+
+`run_mcp.py` runs MCPMark's `file_property/size_classification` task through its
+stdio MCP filesystem server, using the upstream agent and verifier. It uses a
+separate environment and a $2 cap. This is a single-task evaluation with a capped
+OpenAI SDK transport, not a reproduction of the MCPMark leaderboard. Adaptations,
+source revision, data hash, file hashes, model requests, tool responses and the
+verifier output are saved in `results/followup/mcp/`.
+
+```sh
+python3 -m venv .venv-mcp
+.venv-mcp/bin/python -m pip install -r requirements-mcp.txt
+git clone https://github.com/eval-sys/mcpmark.git /tmp/mcpmark
+git -C /tmp/mcpmark checkout cd45b7f57923b9b3985467f5139927575f83141c
+curl -fL https://storage.mcpmark.ai/filesystem/file_property.zip -o /tmp/file_property.zip
+.venv-mcp/bin/python run_mcp.py --upstream /tmp/mcpmark --data /tmp/file_property.zip --output /tmp/mcp-result --env-file .env
+```
+
+Node.js and `npx` are required; the upstream agent requests
+`@modelcontextprotocol/server-filesystem@2025.12.18`. The output directory must
+not already exist. The task works on a fresh extraction of the published data.
+The original binary files are not stored in this repository.

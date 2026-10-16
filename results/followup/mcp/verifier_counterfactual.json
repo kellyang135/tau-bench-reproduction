@@ -1,0 +1,9 @@
+{
+  "type": "offline counterfactual verifier check; not another model run",
+  "change": "Move only .DS_Store from medium_files to large_files in a temporary copy.",
+  "original_run_score": 0,
+  "counterfactual_verifier_pass": true,
+  "model_api_calls": 0,
+  "new_api_cost_usd": 0,
+  "original_evidence_unchanged": true
+}

@@ -1,0 +1,76 @@
+{
+  "original": {
+    "calls": 549,
+    "cost_usd": 2.3071125,
+    "models": {
+      "gpt-4o-2024-08-06": 549
+    },
+    "temperatures": {
+      "user": [
+        "omitted"
+      ],
+      "agent": [
+        "0"
+      ]
+    },
+    "system_fingerprints": {
+      "fp_af0c10fe65": 62,
+      "fp_039334b05c": 27,
+      "fp_e68c776e99": 301,
+      "fp_11893ad7c9": 25,
+      "fp_4a00dbbba9": 17,
+      "fp_0a4b2d353e": 47,
+      "fp_e64d293026": 25,
+      "fp_6a23e70e3e": 12,
+      "fp_cf1866e9bf": 15,
+      "fp_2a68371a58": 18
+    },
+    "reward_matches": 30,
+    "tool_responses_matched": 144
+  },
+  "user-temp-zero": {
+    "calls": 562,
+    "cost_usd": 2.20307,
+    "models": {
+      "gpt-4o-2024-08-06": 562
+    },
+    "temperatures": {
+      "user": [
+        "0.0"
+      ],
+      "agent": [
+        "0"
+      ]
+    },
+    "system_fingerprints": {
+      "fp_af0c10fe65": 75,
+      "fp_039334b05c": 30,
+      "fp_e68c776e99": 299,
+      "fp_11893ad7c9": 22,
+      "fp_4a00dbbba9": 17,
+      "fp_0a4b2d353e": 53,
+      "fp_e64d293026": 25,
+      "fp_6a23e70e3e": 12,
+      "fp_cf1866e9bf": 10,
+      "fp_2a68371a58": 19
+    },
+    "reward_matches": 30,
+    "tool_responses_matched": 135
+  },
+  "mcp": {
+    "calls": 6,
+    "cost_usd": 0.03154,
+    "models": {
+      "gpt-4o-2024-08-06": 6
+    },
+    "temperatures": {
+      "agent": [
+        "1.0"
+      ]
+    },
+    "system_fingerprints": {
+      "fp_bfeb20929a": 6
+    }
+  },
+  "total_additional_cost_usd": 4.5417225
+}

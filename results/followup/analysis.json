@@ -1,0 +1,731 @@
+{
+  "archive": {
+    "attempts": 200,
+    "successes": 84,
+    "trial_scores": {
+      "0": 0.42,
+      "1": 0.44,
+      "2": 0.4,
+      "3": 0.42
+    },
+    "execution_errors": 0,
+    "task_success_counts": {
+      "0": 0,
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 1,
+      "12": 4,
+      "13": 2,
+      "14": 0,
+      "15": 2,
+      "16": 1,
+      "17": 1,
+      "18": 4,
+      "19": 0,
+      "20": 4,
+      "21": 3,
+      "22": 0,
+      "23": 0,
+      "24": 4,
+      "25": 0,
+      "26": 2,
+      "27": 2,
+      "28": 0,
+      "29": 1,
+      "30": 2,
+      "31": 2,
+      "32": 0,
+      "33": 0,
+      "34": 3,
+      "35": 4,
+      "36": 4,
+      "37": 3,
+      "38": 4,
+      "39": 1,
+      "40": 3,
+      "41": 2,
+      "42": 4,
+      "43": 1,
+      "44": 2,
+      "45": 2,
+      "46": 2,
+      "47": 1,
+      "48": 4,
+      "49": 4
+    },
+    "variable_task_ids": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      11,
+      13,
+      15,
+      16,
+      17,
+      21,
+      26,
+      27,
+      29,
+      30,
+      31,
+      34,
+      37,
+      39,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      47
+    ]
+  },
+  "fresh": {
+    "attempts": 200,
+    "successes": 98,
+    "trial_scores": {
+      "0": 0.42,
+      "1": 0.56,
+      "2": 0.5,
+      "3": 0.48
+    },
+    "execution_errors": 0,
+    "task_success_counts": {
+      "0": 0,
+      "1": 4,
+      "2": 1,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 3,
+      "7": 2,
+      "8": 0,
+      "9": 1,
+      "10": 0,
+      "11": 2,
+      "12": 4,
+      "13": 3,
+      "14": 2,
+      "15": 3,
+      "16": 2,
+      "17": 2,
+      "18": 4,
+      "19": 1,
+      "20": 3,
+      "21": 4,
+      "22": 0,
+      "23": 2,
+      "24": 3,
+      "25": 0,
+      "26": 3,
+      "27": 3,
+      "28": 0,
+      "29": 0,
+      "30": 1,
+      "31": 3,
+      "32": 0,
+      "33": 1,
+      "34": 4,
+      "35": 4,
+      "36": 4,
+      "37": 2,
+      "38": 4,
+      "39": 2,
+      "40": 2,
+      "41": 1,
+      "42": 4,
+      "43": 2,
+      "44": 1,
+      "45": 2,
+      "46": 2,
+      "47": 0,
+      "48": 3,
+      "49": 4
+    },
+    "variable_task_ids": [
+      2,
+      6,
+      7,
+      9,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24,
+      26,
+      27,
+      30,
+      31,
+      33,
+      37,
+      39,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      48
+    ]
+  },
+  "task_changes": {
+    "unchanged": 19,
+    "improved": 20,
+    "worsened": 11
+  },
+  "paired_task_bootstrap": {
+    "replicates": 20000,
+    "seed": 20261016,
+    "percentile_95_interval": [
+      0.005,
+      0.135
+    ],
+    "interpretation": "Resamples paired task means. Describes uncertainty across tasks, not a causal explanation or a model of within-task generation variability."
+  },
+  "selected_task_ids": [
+    8,
+    18,
+    26,
+    28,
+    32,
+    35,
+    42,
+    43,
+    46,
+    47
+  ],
+  "archive_selected": {
+    "attempts": 40,
+    "successes": 18,
+    "trial_scores": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 0.3
+    },
+    "execution_errors": 0,
+    "task_success_counts": {
+      "8": 0,
+      "18": 4,
+      "26": 2,
+      "28": 0,
+      "32": 0,
+      "35": 4,
+      "42": 4,
+      "43": 1,
+      "46": 2,
+      "47": 1
+    },
+    "variable_task_ids": [
+      26,
+      43,
+      46,
+      47
+    ]
+  },
+  "fresh_selected": {
+    "attempts": 40,
+    "successes": 19,
+    "trial_scores": {
+      "0": 0.4,
+      "1": 0.4,
+      "2": 0.5,
+      "3": 0.6
+    },
+    "execution_errors": 0,
+    "task_success_counts": {
+      "8": 0,
+      "18": 4,
+      "26": 3,
+      "28": 0,
+      "32": 0,
+      "35": 4,
+      "42": 4,
+      "43": 2,
+      "46": 2,
+      "47": 0
+    },
+    "variable_task_ids": [
+      26,
+      43,
+      46
+    ]
+  },
+  "contiguous_task_subsets": [
+    {
+      "task_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "archive": {
+        "attempts": 40,
+        "successes": 5,
+        "trial_scores": {
+          "0": 0.1,
+          "1": 0.2,
+          "2": 0.2,
+          "3": 0.0
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "0": 0,
+          "1": 1,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 0,
+          "9": 0
+        },
+        "variable_task_ids": [
+          1,
+          2,
+          5,
+          6,
+          7
+        ]
+      },
+      "fresh": {
+        "attempts": 40,
+        "successes": 11,
+        "trial_scores": {
+          "0": 0.2,
+          "1": 0.3,
+          "2": 0.3,
+          "3": 0.3
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "0": 0,
+          "1": 4,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 3,
+          "7": 2,
+          "8": 0,
+          "9": 1
+        },
+        "variable_task_ids": [
+          2,
+          6,
+          7,
+          9
+        ]
+      }
+    },
+    {
+      "task_ids": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "archive": {
+        "attempts": 40,
+        "successes": 15,
+        "trial_scores": {
+          "0": 0.3,
+          "1": 0.3,
+          "2": 0.4,
+          "3": 0.5
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "10": 0,
+          "11": 1,
+          "12": 4,
+          "13": 2,
+          "14": 0,
+          "15": 2,
+          "16": 1,
+          "17": 1,
+          "18": 4,
+          "19": 0
+        },
+        "variable_task_ids": [
+          11,
+          13,
+          15,
+          16,
+          17
+        ]
+      },
+      "fresh": {
+        "attempts": 40,
+        "successes": 23,
+        "trial_scores": {
+          "0": 0.5,
+          "1": 0.7,
+          "2": 0.7,
+          "3": 0.4
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "10": 0,
+          "11": 2,
+          "12": 4,
+          "13": 3,
+          "14": 2,
+          "15": 3,
+          "16": 2,
+          "17": 2,
+          "18": 4,
+          "19": 1
+        },
+        "variable_task_ids": [
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ]
+      }
+    },
+    {
+      "task_ids": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "archive": {
+        "attempts": 40,
+        "successes": 16,
+        "trial_scores": {
+          "0": 0.4,
+          "1": 0.4,
+          "2": 0.5,
+          "3": 0.3
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "20": 4,
+          "21": 3,
+          "22": 0,
+          "23": 0,
+          "24": 4,
+          "25": 0,
+          "26": 2,
+          "27": 2,
+          "28": 0,
+          "29": 1
+        },
+        "variable_task_ids": [
+          21,
+          26,
+          27,
+          29
+        ]
+      },
+      "fresh": {
+        "attempts": 40,
+        "successes": 18,
+        "trial_scores": {
+          "0": 0.5,
+          "1": 0.5,
+          "2": 0.5,
+          "3": 0.3
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "20": 3,
+          "21": 4,
+          "22": 0,
+          "23": 2,
+          "24": 3,
+          "25": 0,
+          "26": 3,
+          "27": 3,
+          "28": 0,
+          "29": 0
+        },
+        "variable_task_ids": [
+          20,
+          23,
+          24,
+          26,
+          27
+        ]
+      }
+    },
+    {
+      "task_ids": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "archive": {
+        "attempts": 40,
+        "successes": 23,
+        "trial_scores": {
+          "0": 0.6,
+          "1": 0.6,
+          "2": 0.4,
+          "3": 0.7
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "30": 2,
+          "31": 2,
+          "32": 0,
+          "33": 0,
+          "34": 3,
+          "35": 4,
+          "36": 4,
+          "37": 3,
+          "38": 4,
+          "39": 1
+        },
+        "variable_task_ids": [
+          30,
+          31,
+          34,
+          37,
+          39
+        ]
+      },
+      "fresh": {
+        "attempts": 40,
+        "successes": 25,
+        "trial_scores": {
+          "0": 0.6,
+          "1": 0.7,
+          "2": 0.5,
+          "3": 0.7
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "30": 1,
+          "31": 3,
+          "32": 0,
+          "33": 1,
+          "34": 4,
+          "35": 4,
+          "36": 4,
+          "37": 2,
+          "38": 4,
+          "39": 2
+        },
+        "variable_task_ids": [
+          30,
+          31,
+          33,
+          37,
+          39
+        ]
+      }
+    },
+    {
+      "task_ids": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "archive": {
+        "attempts": 40,
+        "successes": 25,
+        "trial_scores": {
+          "0": 0.7,
+          "1": 0.7,
+          "2": 0.5,
+          "3": 0.6
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "40": 3,
+          "41": 2,
+          "42": 4,
+          "43": 1,
+          "44": 2,
+          "45": 2,
+          "46": 2,
+          "47": 1,
+          "48": 4,
+          "49": 4
+        },
+        "variable_task_ids": [
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          47
+        ]
+      },
+      "fresh": {
+        "attempts": 40,
+        "successes": 21,
+        "trial_scores": {
+          "0": 0.3,
+          "1": 0.6,
+          "2": 0.5,
+          "3": 0.7
+        },
+        "execution_errors": 0,
+        "task_success_counts": {
+          "40": 2,
+          "41": 1,
+          "42": 4,
+          "43": 2,
+          "44": 1,
+          "45": 2,
+          "46": 2,
+          "47": 0,
+          "48": 3,
+          "49": 4
+        },
+        "variable_task_ids": [
+          40,
+          41,
+          43,
+          44,
+          45,
+          46,
+          48
+        ]
+      }
+    }
+  ],
+  "original": {
+    "attempts": 30,
+    "successes": 13,
+    "trial_scores": {
+      "0": 0.3,
+      "1": 0.5,
+      "2": 0.5
+    },
+    "execution_errors": 0,
+    "task_success_counts": {
+      "8": 0,
+      "18": 3,
+      "26": 1,
+      "28": 0,
+      "32": 0,
+      "35": 3,
+      "42": 3,
+      "43": 2,
+      "46": 1,
+      "47": 0
+    },
+    "variable_task_ids": [
+      26,
+      43,
+      46
+    ],
+    "run_status": "completed",
+    "cost": {
+      "estimated_api_cost_usd": 2.3071125,
+      "uncertain_api_cost_upper_bound_usd": 0.0,
+      "budget_usd": 4.0,
+      "api_calls_dispatched": 549,
+      "note": "Token-based estimate, not an invoice; includes both roles and setup calls."
+    }
+  },
+  "user-temp-zero": {
+    "attempts": 30,
+    "successes": 12,
+    "trial_scores": {
+      "0": 0.5,
+      "1": 0.3,
+      "2": 0.4
+    },
+    "execution_errors": 0,
+    "task_success_counts": {
+      "8": 0,
+      "18": 3,
+      "26": 0,
+      "28": 0,
+      "32": 0,
+      "35": 3,
+      "42": 3,
+      "43": 1,
+      "46": 1,
+      "47": 1
+    },
+    "variable_task_ids": [
+      43,
+      46,
+      47
+    ],
+    "run_status": "completed",
+    "cost": {
+      "estimated_api_cost_usd": 2.20307,
+      "uncertain_api_cost_upper_bound_usd": 0.0,
+      "budget_usd": 4.0,
+      "api_calls_dispatched": 562,
+      "note": "Token-based estimate, not an invoice; includes both roles and setup calls."
+    }
+  },
+  "temperature_comparison": {
+    "score_difference_percentage_points": -3.3333333333333326,
+    "task_success_changes": {
+      "8": 0,
+      "18": 0,
+      "26": -1,
+      "28": 0,
+      "32": 0,
+      "35": 0,
+      "42": 0,
+      "43": -1,
+      "46": 0,
+      "47": 1
+    },
+    "interpretation": "Exploratory comparison on ten tasks, three attempts per condition. Not a full benchmark score or proof of the historical gap's cause."
+  }
+}

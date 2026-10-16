@@ -1,0 +1,28 @@
+{
+  "upstream_commit": "cd45b7f57923b9b3985467f5139927575f83141c",
+  "task": "filesystem/standard/file_property/size_classification",
+  "model": "gpt-4o-2024-08-06",
+  "agent": "upstream MCPMarkAgent",
+  "temperature": 1.0,
+  "trials": 1,
+  "max_turns": 100,
+  "mcp_server": "@modelcontextprotocol/server-filesystem@2025.12.18",
+  "transport": "stdio",
+  "budget_usd": 2,
+  "data_sha256": "99d5449cef45bfcda6e5260f6ef4cd356bdbae59818d37ffa840054cdee19ec4",
+  "adaptations": [
+    "Direct OpenAI SDK transport with no retries and cost reservation.",
+    "Omit upstream max_tokens=32768 and non-OpenAI enforcer_mode/think_mode; snapshot limit 16384.",
+    "Use upstream agent, task description and verifier directly; isolated extracted task directory instead of full multi-service pipeline."
+  ],
+  "task_sha256": "c5f0ce9b6cb888f98969c83d7e1a70d50030d2271a8d6640ea950871f8b98475",
+  "verifier_sha256": "602895691d38e8c1de39b9aebe8fe66a88f030cdbd0f42f7749c20267acddaa4",
+  "runtime": {
+    "python": "3.12.4",
+    "node": "v20.19.3",
+    "npm": "10.8.2",
+    "mcp": "1.12.1",
+    "litellm": "1.80.0",
+    "openai": "2.54.0"
+  }
+}

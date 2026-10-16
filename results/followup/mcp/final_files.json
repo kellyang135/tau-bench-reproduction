@@ -1,0 +1,38 @@
+{
+  "large_files/bear.jpg": {
+    "bytes": 108104,
+    "sha256": "19eef6c93794ccb87e955d089b666d4a8968077a645859dbf1ee5a381f6fac3f"
+  },
+  "large_files/bridge.jpg": {
+    "bytes": 205655,
+    "sha256": "11fa60572c3f7c31681f8930787f959742feb82159e524dd16d3e2b2a7a94f54"
+  },
+  "large_files/bus.MOV": {
+    "bytes": 15706882,
+    "sha256": "6a12e35df3d22dd86dcaa0d557ab48f254ed7502c6904e54d8dbdf19955b9728"
+  },
+  "large_files/road.MOV": {
+    "bytes": 15191645,
+    "sha256": "6c0b02fc2d240a2b0c8fc872fb017f07f61ac21bdded8715b7ae13806ee77b1d"
+  },
+  "large_files/sg.jpg": {
+    "bytes": 332545,
+    "sha256": "840271487cbd0fbe15a28825f77e25f736430d4214dd820fc17391e0b9721c49"
+  },
+  "medium_files/.DS_Store": {
+    "bytes": 6148,
+    "sha256": "21b7d121a43668c29f1d9bc9d7e0604b5a06b8f7c5a1cddeb13fe1b6180fe553"
+  },
+  "medium_files/random_file_2.txt": {
+    "bytes": 634,
+    "sha256": "f2f63cb47be94290af6f23a8914425c27f5aea112e29a59d999455501d374c4b"
+  },
+  "small_files/random_file_1.txt": {
+    "bytes": 111,
+    "sha256": "021419bd03ac357b827010b35e348b4246d51212a1ee8c6f497f849c02eb676a"
+  },
+  "small_files/random_file_3.txt": {
+    "bytes": 97,
+    "sha256": "5cd662bebd51949da00d0d77caeee6c35785c8bb0cec836dc0960ae80a777239"
+  }
+}

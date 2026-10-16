@@ -90,6 +90,16 @@ class LiveTests(unittest.TestCase):
         self.assertNotIn("api_key", request)
         self.assertEqual(self.events()[1]["response"]["system_fingerprint"], "fake-fingerprint")
 
+    def test_user_temperature_override_does_not_change_agent_request(self):
+        captured = []
+        log = CallLog(self.path / "calls.jsonl", 2, lambda **kw: captured.append(kw) or response(), 0)
+        for role in ("user", "agent"):
+            log.wrapper(role)(model=MODEL, custom_llm_provider="openai",
+                              messages=[{"role": "user", "content": "test"}])
+        self.assertEqual(captured[0]["temperature"], 0)
+        self.assertNotIn("temperature", captured[1])
+        self.assertNotIn("temperature", self.events()[0]["source_request"])
+
     def test_sdk_transport_has_no_retries_or_litellm_dispatch(self):
         os.environ["LITELLM_LOCAL_MODEL_COST_MAP"] = "True"
         with patch("openai.OpenAI") as client_type:
