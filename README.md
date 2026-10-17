@@ -149,3 +149,8 @@ Node.js and `npx` are required; the upstream agent requests
 `@modelcontextprotocol/server-filesystem@2025.12.18`. The output directory must
 not already exist. The task works on a fresh extraction of the published data.
 The original binary files are not stored in this repository.
+
+## Third-party material
+
+See [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) for the licenses and
+provenance of the benchmark source, mock data, and text retained in run logs.

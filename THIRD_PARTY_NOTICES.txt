@@ -1,0 +1,24 @@
+Third-party material
+
+Tau-bench
+Source: https://github.com/sierra-research/tau-bench
+Revision: 7362a1708d720a4d697d042f21fd8637ea144c3b
+Copyright (c) 2024 Sierra. MIT License.
+The vendored source, mock databases, task definitions, and historical trajectories
+are covered by the upstream license retained at external/tau-bench/LICENSE.
+Fresh evaluation logs also contain benchmark policy, task, and tool-response text.
+Vendor file hashes are recorded in vendor-manifest.json.
+
+MCPMark
+Source: https://github.com/eval-sys/mcpmark
+Revision: cd45b7f57923b9b3985467f5139927575f83141c
+Apache License, Version 2.0; retained at licenses/MCPMark-Apache-2.0.txt.
+The MCP evaluation logs contain upstream task and agent-prompt text, together
+with generated model responses and filesystem-tool results. Transport and
+execution adaptations are recorded in results/followup/mcp/manifest.json.
+The downloaded task images, videos, and .DS_Store file are not redistributed
+in this repository; only their filenames, sizes, hashes, and execution records
+are retained. No upstream NOTICE file was present at the pinned revision.
+
+These notices do not change the licenses of the original material or assign a
+license to independently authored code in this repository.
